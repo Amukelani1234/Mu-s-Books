@@ -1,0 +1,113 @@
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="Contact.css" rel="stylesheet">
+  
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <a href="Bookstore.html">
+            <img src="logo.png" class="logo" alt="Mu's Books Logo">
+        </a>
+    
+        <h1 class="bookstore-name">Mu's Books</h1>
+    
+        <div class="topnav">
+            <input type="text" placeholder="Search..">
+            <a href="SHOPPING CART.html" class="cart"></a>
+        </div>
+    </div>
+	
+	
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="Bookstore.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="PRODUCT CATEGORY.html">Categories</a></li>
+				<li class="nav-item"><a class="nav-link" href="PRODUCT DETAILS.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="ABOUT US.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link active" href="CONTACT US.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <br>
+	<br>
+	<br>
+	<br>
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <h3><font color="#fc7f03">Get in touch with us! We would love to hear from you!</font></h3>
+         <BR> <br>
+        <div class="contact-details">
+            <!-- Phone -->
+            <div class="contact-item">
+                <img src="telephone.jpg" alt="Telephone">
+                <p><b>Phone Number</b><br>(+27) 74 910 4180</p>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-item">
+                <a href="mailto:Mubookstore@libray.co.za">
+                    <img src="email.jpg" alt="Email">
+                </a>
+                <p><b>Email</b><br>Mubookstore@library.co.za</p>
+            </div>
+
+            <!-- Address -->
+            <div class="contact-item">
+                <a href="https://www.google.com/search?q=bookstores+cape+town">
+                    <img src="address.png" alt="Location">
+                </a>
+                <p><b>Address</b><br>Cnr Buitenkant &, 71 Roeland St, Cape Town City Centre, Cape Town, 8001</p>
+            </div>
+        </div>
+    </div>
+     <br> <br> <br>
+    <!-- Suggestion Form -->
+    <center><h4><font color="#fc7f03">Have any books you'd like us to feature in our next collection? Let Us Know! </font></h4></center>
+    <br>
+	<br>
+	<br>
+    <form action="/action_page.php" method="POST">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="suggestion">Suggestion:</label>
+        <input type="text" id="suggestion" name="suggestion" required>
+
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+	<br>
+	<br> 
+	<br>
+	<br>
+    
+    <center><footer>
+        Copyright © 2025 Mu's Books. All Rights Reserved
+    </footer></center>
+
+</body>
+</html>

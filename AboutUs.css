@@ -1,0 +1,66 @@
+/* Navigation Menu */
+
+
+.topnav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Animated Text */
+.split-text-container {
+    display: flex;
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fc7f03;
+    overflow: hidden;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.text-part {
+    display: inline-block;
+    position: relative;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.text-part.left {
+    transform: translateX(-200%);
+    animation-name: slide-in-left;
+}
+
+.text-part.right {
+    transform: translateX(200%);
+    animation-name: slide-in-right;
+}
+
+@keyframes slide-in-left {
+    0% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes slide-in-right {
+    0% { transform: translateX(200%); }
+    100% { transform: translateX(0); }
+}
+
+/* Image Styling */
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

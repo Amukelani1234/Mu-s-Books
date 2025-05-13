@@ -1,0 +1,376 @@
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* This creates an orange banner which will be the theme of my bookstore */
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;;
+            padding: 20px 60px;
+            background: #fc7f03;
+            color: white;
+            font-size: 30px;
+            
+        }
+
+        .bookstore-name {
+           
+            flex-grow: 1;
+            text-align: center;
+            margin: 0;
+        }
+
+        /* I added the shopping cart icon for easy navigation around the site */
+
+        .cart {
+            width: 40px;
+            height: 40px;
+            background: url('shoppingcart.png') center center no-repeat;
+            background-size: contain;
+            /*position: absolute;
+            right: 20px; /* Moves cart towards the far right */
+        }
+		
+		.cart-text {
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fc7f03;
+            text-align: center;
+        }
+		
+		.logo {
+			width: 50px;
+			height: 50px;
+			
+		}
+
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background: url('banner-image.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+       
+	   /* this highlights the different pages when hovered over so that the user can see*/
+	   
+        .navbar-nav .nav-item .nav-link {
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+
+        .navbar-nav .nav-link:focus {
+            outline: 2px solid #fc7f03;
+            background: rgba(252, 127, 3, 0.2);
+        }
+
+		/* I wanted to put the search bar next to cart so this alignment will automatically do that */
+  
+         .topnav {
+			display: flex;
+			justify-content: center;
+			padding: 10px;
+			background-color: #fc7f03;
+		}
+             
+        
+	
+
+        /* This is the styling for the search box */
+        .topnav input[type="text"] {
+            padding: 8px;
+            border: 1px solid #d87306;
+            border-radius: 5px;
+            font-size: 17px;
+            margin-right: 15px; /* I added this to create spacing between search and cart */
+        }
+		
+		/*I created one style for heading one and two across the website*/
+		
+		h3 {
+            font-size: 36px;
+            font-weight: bold;
+            color: orange;
+            text-align: center;
+            animation: wave 1.5s infinite alternate;
+        }
+        
+        @keyframes wave {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+		
+		/* This is the formatting I have incorporated in my homepage */
+		
+		.section {
+            padding: 40px;
+            text-align: center;
+        }
+		
+		/*I addeded this section to make all the pictures the same size*/
+        
+        .section img {
+			width: 450px; 
+			height: 450px; 
+			object-fit: cover; 
+			border-radius: 10px;
+			margin-bottom: 20px;
+		}
+
+		/* To make sure that everything is aligned, I have used boxes to separate the images */
+        
+        .box .inner {
+            width: 400px;
+            height: 200px;
+            line-height: 200px;
+            font-size: 4em;
+            font-family: sans-serif;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .box .inner:first-child {
+            background-color: indianred;
+            transform-origin: right;
+            transform: perspective(100px) rotateY(-15deg);
+        }
+
+        .box .inner:last-child {
+            background-color: lightcoral;
+            transform-origin: left;
+            transform: perspective(100px) rotateY(15deg);
+        }
+
+        .box .inner span {
+            position: absolute;
+            animation: marquee 5s linear infinite;
+        }
+
+        .box .inner:first-child span {
+            animation-delay: 2.5s;
+            left: -100%;
+        }
+
+        @keyframes marquee {
+            from {
+                left: 100%;
+            }
+
+            to {
+                left: -100%;
+            }
+        }
+		
+		/*main heading animation */
+		
+		.wave-text span {
+		display: inline-block;
+		font-size: 4rem;
+		animation: wave 2s ease-in-out infinite;
+		}
+
+		.wave-text span:nth-child(1) {
+		animation-delay: 0s;
+		}
+		.wave-text span:nth-child(2) {
+		animation-delay: 0.2s;
+		}
+		.wave-text span:nth-child(3) {
+		animation-delay: 0.4s;
+		}
+		.wave-text span:nth-child(4) {
+		animation-delay: 0.6s;
+		}
+
+	@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+		
+		
+
+        /*I formatted a button style for added cohesion*/
+
+        .button {
+			background-color: #fc7f03; 
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+		
+		 /* I added this effect on all images so that they zoom in when you hover over them */
+        .card-body img:hover {
+            transform: scale(1.1);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+        }
+		
+		/*I added a footer class to maintain cohesion across all the footers across the website */
+
+		.footer {
+            
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+        }
+        
+		/* This is the font animation for the product details page */
+		
+		@font-face {
+            font-family: 'TheFont';
+            src: url("https://garet.typeforward.com/assets/fonts/shared/TFMixVF.woff2") format('woff2');
+        }
+		
+		.breathe-animation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .breathe-animation span {
+            font-family: 'TheFont';
+            font-size: clamp(3vw, 5vw, 8vh);
+            color: #fc7f03;
+            animation: letter-breathe 3s ease-in-out infinite;
+        }
+
+        @keyframes letter-breathe {
+            from, to { font-variation-settings: 'wght' 100; }
+            50% { font-variation-settings: 'wght' 900; }
+        }
+		
+
+		/* this is the alignment formatting for the billing details form in the Checkout page */
+	   
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: 20px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background: #fc7f03;
+            color: white;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        form input[type="submit"]:hover {
+            background: #fc7f03;
+        }
+
+		.checkout-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+	/*this is to adjust the size of my website content for tablets and laptops*/
+		@media only screen and (max-width: 1024px) {
+			.header {
+				flex-direction: column;
+				text-align: center;
+			}
+
+			.navbar-nav {
+				flex-direction: column;
+			}
+
+			.nav-item {
+				margin: 5px 0;
+			}
+
+			.split-text-container {
+				font-size: 3rem;
+			}
+
+			.image-container {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.image-container img {
+				width: 90%;
+				height: auto;
+			}
+			}
+
+	/*this is to adjust the size of my website content for tablets*/
+
+		@media screen and (max-width: 600px) {
+			.topnav {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+			
+			.topnav a {
+				width: 100%;
+				text-align: left;
+				padding: 12px;
+		}}
+			
+
+	/*this is to adjust the size of my website content for mobile phones*/
+		@media only screen and (max-width: 480px) {
+			body {
+			font-size: 14px;
+		}
+
+		.split-text-container {
+        font-size: 2rem;
+		}}
+
+
+
+
+
+  
+  
+        
+        
+    
